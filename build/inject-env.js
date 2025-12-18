@@ -67,7 +67,7 @@ fs.mkdirSync(distDir, { recursive: true });
         const srcPath = path.join(rootDir, file);
         const destPath = path.join(distDir, file);
 
-        // Ensure the destination subdirectory exists (e.g., for images/dev.png)
+        // Ensure the destination subdirectory exists (e.g., for images/dev.webp)
         const destSubDir = path.dirname(destPath);
         if (!fs.existsSync(destSubDir)){
             fs.mkdirSync(destSubDir, { recursive: true });
